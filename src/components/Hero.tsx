@@ -25,7 +25,8 @@ const Hero = () => {
                 Welcome to my portfolio
               </p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
-                <span className="gradient-primary bg-clip-text text-slate-200">Prapti </span>
+                <span className="gradient-primary bg-clip-text text-slate-200">Prapti Santosh
+Patil</span>
                 <br />
                 <span className="text-foreground">Patil</span>
               </h1>
