@@ -28,7 +28,7 @@ const Hero = () => {
                 <span className="gradient-primary bg-clip-text text-slate-200">Prapti Santosh
 Patil</span>
                 <br />
-                <span className="text-foreground">Patil</span>
+                <span className="text-foreground"></span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground font-light">
                 Full Stack Web Developer | UI/UX Enthusiast | Problem Solver
