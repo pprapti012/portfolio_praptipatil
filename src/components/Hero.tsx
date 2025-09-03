@@ -73,7 +73,7 @@ const Hero = () => {
                   <img
                     src={`${profilePicture}?v=${Date.now()}`}
                     alt="Prapti Santosh Patil"
-                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    className="w-full h-full object-cover scale-110 transition-transform duration-500 hover:scale-125"
                     key={Date.now()}
                   />
                 </div>
