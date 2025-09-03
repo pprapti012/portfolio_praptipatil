@@ -71,9 +71,10 @@ const Hero = () => {
               <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden gradient-card p-2 shadow-glow">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
-                    src={profilePicture}
+                    src={`${profilePicture}?v=${Date.now()}`}
                     alt="Prapti Santosh Patil"
                     className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                    key={Date.now()}
                   />
                 </div>
               </div>
