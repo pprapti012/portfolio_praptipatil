@@ -1,0 +1,36 @@
+[33me5843bb[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m first commit
+[33m2cb08c2[m Visual edit in Lovable
+[33mb6e6284[m Visual edit in Lovable
+[33m91eba6a[m Add skills and certificates
+[33m24c461e[m Add backend skills and other sections
+[33m85459bd[m Update skills section
+[33m3f0633c[m Update frontend skills
+[33meeb88be[m Visual edit in Lovable
+[33m32da40c[m Manual edit: src/components/Navbar.tsx
+[33mff279f7[m Update navbar and projects
+[33m47b5fee[m Update contact info and education status
+[33m2911065[m Visual edit in Lovable
+[33mc0c9aa3[m Visual edit in Lovable
+[33m336c50c[m Visual edit in Lovable
+[33mc10176c[m Visual edit in Lovable
+[33mf8c1bfe[m Visual edit in Lovable
+[33mdb1c11d[m Visual edit in Lovable
+[33m69ff27e[m Visual edit in Lovable
+[33mb5e10ef[m Visual edit in Lovable
+[33m5c91408[m Visual edit in Lovable
+[33mc745f4d[m Visual edit in Lovable
+[33md13a8ed[m Visual edit in Lovable
+[33mf8a499d[m Visual edit in Lovable
+[33mdfc355f[m Visual edit in Lovable
+[33m8a4a5e7[m Visual edit in Lovable
+[33m22b17f1[m Visual edit in Lovable
+[33mcf2b099[m Visual edit in Lovable
+[33mcc68424[m Reverted to commit 5e412b6cf826e86c48e8ab244fd95f76c06bcec5
+[33mdf34309[m Reverted to commit bfe1a2f0b55a23893ddb159b76bc85316e6ae454
+[33me2b0b98[m Revert profile photo zoom
+[33mbfe1a2f[m Adjust profile photo size
+[33m5e412b6[m Adjust profile picture size
+[33m01b86bf[m Update profile picture
+[33m449fc2f[m Fix: Profile photo reload issue
+[33m86fef64[m Add portfolio website structure
+[33m5d08356[m [skip lovable] Use tech stack vite_react_shadcn_ts_20250728_minor
