@@ -9,7 +9,7 @@ const Skills = () => {
   }, {
     category: 'Backend Development',
     icon: Database,
-    skills: ['Node.js', 'Java', 'WebSockets', 'RESTful APIs', 'Server Architecture'],
+    skills: ['Node.js', 'Java', 'Express.js', 'WebSockets', 'RESTful APIs', 'Server Architecture'],
     color: 'from-green-500 to-emerald-500'
   }, {
     category: 'Database & Tools',
