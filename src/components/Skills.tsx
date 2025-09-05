@@ -14,13 +14,18 @@ const Skills = () => {
   }, {
     category: 'Database & Tools',
     icon: Code2,
-    skills: ['MongoDB', 'MySQL', 'GitHub', 'Postman', 'Version Control'],
+    skills: ['MongoDB', 'MySQL', 'GitHub', 'Postman', 'Version Control', 'Git'],
     color: 'from-purple-500 to-pink-500'
+  }, {
+    category: 'Programming Languages',
+    icon: Palette,
+    skills: ['Java', 'JavaScript', 'Python', 'C++', 'Data Structures', 'Algorithms'],
+    color: 'from-orange-500 to-red-500'
   }, {
     category: 'Design & UX',
     icon: Palette,
-    skills: ['Figma', 'UI/UX Design', 'Prototyping', 'User Experience', 'Design Systems'],
-    color: 'from-orange-500 to-red-500'
+    skills: ['Figma', 'UI/UX Design', 'Prototyping', 'User Experience', 'Design Systems', 'Responsive Design'],
+    color: 'from-cyan-500 to-blue-500'
   }];
   const softSkills = [{
     name: 'Leadership',
