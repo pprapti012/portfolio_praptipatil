@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div>
-              <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-slate-100">
+              <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-slate-200">
                 Prapti Santosh Patil
               </h3>
               <p className="text-muted-foreground mt-2">
