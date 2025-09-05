@@ -42,7 +42,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold gradient-primary bg-clip-text text-transparent bg-slate-300">
+            <h1 className="text-xl font-bold bg-clip-text text-transparent bg-slate-300">
               Prapti Patil
             </h1>
           </div>

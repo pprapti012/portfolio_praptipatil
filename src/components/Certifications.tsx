@@ -1,6 +1,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Award, BookOpen, Code2, Database } from 'lucide-react';
+import { BookOpen, Code2, Database, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Certifications = () => {
   const certifications = [
@@ -8,44 +9,51 @@ const Certifications = () => {
       title: 'Competitive Programming Course by Devtown',
       description: 'Gained algorithmic problem-solving and coding techniques',
       icon: Code2,
-      category: 'Programming'
+      category: 'Programming',
+      certificateUrl: 'https://cert.devtown.in/verify/kqK2qEWC'
     },
     {
       title: 'Core Concepts of Java by Devtown',
       description: 'Covered Java fundamentals including OOP principles',
       icon: Code2,
-      category: 'Programming'
+      category: 'Programming',
+      certificateUrl: 'https://cert.devtown.in/verify/9UjaAzcV'
     },
     {
       title: 'Self-paced Full Stack Web Development Program by Devtown',
       description: 'Built full stack web apps using HTML, CSS, JS, Node.js, and React',
       icon: BookOpen,
-      category: 'Web Development'
+      category: 'Web Development',
+      certificateUrl: 'https://cert.devtown.in/verify/a5jbHTuK'
     },
     {
       title: 'Core Concepts of C++ by Devtown',
       description: 'Studied C++ Basics, OOP, and Standard Template Library',
       icon: Code2,
-      category: 'Programming'
+      category: 'Programming',
+      certificateUrl: 'https://cert.devtown.in/verify/rXCU2SWL'
     },
     {
       title: 'Full Stack Web Development Training by Devtown',
       description: 'Completed guided training in both frontend and backend technologies',
       icon: BookOpen,
-      category: 'Web Development'
+      category: 'Web Development',
+      certificateUrl: 'https://cert.devtown.in/verify/hMm4BC7t'
     },
     {
       title: 'Data Structures and Algorithms Course by Devtown',
       description: 'Gained knowledge of key data structures and algorithms for coding',
       icon: Database,
-      category: 'Computer Science'
+      category: 'Computer Science',
+      certificateUrl: 'https://cert.devtown.in/verify/guBCpA7e'
     },
     {
       title: 'Self-paced Full Stack Web Development by Devtown',
       description: 'Independently completed hands-on modules and real-world projects',
       icon: BookOpen,
-      category: 'Web Development'
-    }
+      category: 'Web Development',
+      certificateUrl: 'https://cert.devtown.in/verify/8X9DePiW'
+    },
   ];
 
   const courses = [
@@ -69,7 +77,7 @@ const Certifications = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Certifications & <span className="gradient-primary bg-clip-text text-slate-200">Courses</span>
+            Certifications & <span className="bg-clip-text text-slate-200">Courses</span>
           </h2>
           <div className="w-20 h-1 gradient-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
@@ -95,7 +103,16 @@ const Certifications = () => {
                         </Badge>
                       </div>
                       <h4 className="font-semibold text-lg mb-2 text-foreground">{cert.title}</h4>
-                      <p className="text-muted-foreground text-sm">{cert.description}</p>
+                      <p className="text-muted-foreground text-sm mb-3">{cert.description}</p>
+
+                      {/* Certificate Link */}
+                      {cert.certificateUrl && (
+                        <Button asChild variant="link" className="p-0 h-auto text-sm text-primary flex items-center gap-1">
+                          <a href={cert.certificateUrl} target="_blank" rel="noopener noreferrer">
+                            View Certificate <ExternalLink className="w-4 h-4" />
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </div>
                 </CardContent>

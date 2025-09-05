@@ -10,7 +10,7 @@ const Portfolio = () => {
     technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
     category: 'Web Application',
     features: ['Task creation and management', 'Completion tracking', 'Responsive design', 'Modern UI/UX', 'Real-time updates'],
-    githubUrl: 'https://github.com/pprapti012',
+    githubUrl: 'https://github.com/pprapti012/MERN_TODO_frontend',
     liveUrl: 'https://todoapp-xi-lemon.vercel.app/',
     icon: Code,
     color: 'from-green-500 to-emerald-500'
@@ -53,7 +53,7 @@ const Portfolio = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            My <span className="gradient-primary bg-clip-text text-slate-200">Portfolio</span>
+            My <span className="bg-clip-text text-slate-200">Portfolio</span>
           </h2>
           <div className="w-20 h-1 gradient-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

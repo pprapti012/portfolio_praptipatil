@@ -9,17 +9,17 @@ const Skills = () => {
   }, {
     category: 'Backend Development',
     icon: Database,
-    skills: ['Node.js', 'Java', 'Express.js', 'WebSockets', 'RESTful APIs', 'Server Architecture'],
+    skills: ['Node.js', 'Java', 'Express.js', 'RESTful APIs', 'Server Architecture'],
     color: 'from-green-500 to-emerald-500'
   }, {
     category: 'Database & Tools',
     icon: Code2,
-    skills: ['MongoDB', 'MySQL', 'GitHub', 'Postman', 'Version Control', 'Git'],
+    skills: ['MongoDB', 'MySQL', 'GitHub', 'Postman', 'Version Control'],
     color: 'from-purple-500 to-pink-500'
   }, {
     category: 'Programming Languages',
     icon: Palette,
-    skills: ['Java', 'JavaScript', 'Python', 'C++', 'Data Structures', 'Algorithms'],
+    skills: ['Java', 'JavaScript', 'C++', 'Data Structures', 'Algorithms'],
     color: 'from-orange-500 to-red-500'
   }, {
     category: 'Design & UX',
@@ -63,7 +63,7 @@ const Skills = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            My <span className="gradient-primary bg-clip-text text-slate-200">Skills</span>
+            My <span className="bg-clip-text text-slate-200">Skills</span>
           </h2>
           <div className="w-20 h-1 gradient-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">

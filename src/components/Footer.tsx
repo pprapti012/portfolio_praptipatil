@@ -3,15 +3,15 @@ import { Mail, Linkedin, Github, ExternalLink, Heart } from 'lucide-react';
 const Footer = () => {
   const socialLinks = [{
     icon: Mail,
-    href: 'mailto:praptipatil1904@gmail.com',
+    href: 'mailto:official.praptipatil@gmail.com',
     label: 'Email'
   }, {
     icon: Linkedin,
-    href: 'https://linkedin.com/in/praptipatil',
+    href: 'https://github.com/pprapti012/prapti-builds-web.git',
     label: 'LinkedIn'
   }, {
     icon: Github,
-    href: 'https://github.com/praptipatil',
+    href: 'https://github.com/pprapti012',
     label: 'GitHub'
   }, {
     icon: ExternalLink,
@@ -56,7 +56,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <div>
-              <h3 className="text-2xl font-bold gradient-primary bg-clip-text text-slate-200">
+              <h3 className="text-2xl font-bold bg-clip-text text-slate-200">
                 Prapti Santosh Patil
               </h3>
               <p className="text-muted-foreground mt-2">
@@ -90,8 +90,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
-                <a href="mailto:praptipatil1904@gmail.com" className="text-primary hover:text-primary-glow transition-colors">
-                  praptipatil1904@gmail.com
+                <a href="mailto:official.praptipatil@gmail.com" className="text-primary hover:text-primary-glow transition-colors">
+                  official.praptipatil@gmail.com
                 </a>
               </div>
               <div>
@@ -112,7 +112,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-              <span>© 2024 Prapti Santosh Patil. Made with</span>
+              <span>© 2025 Prapti Santosh Patil. Made with</span>
               <Heart className="h-4 w-4 text-red-500 fill-current" />
               <span>in India</span>
             </div>
