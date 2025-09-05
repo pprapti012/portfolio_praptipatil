@@ -42,8 +42,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
-              Prapti Patil
+            <h1 className="text-xl font-bold">
+              <span className="gradient-primary bg-clip-text text-transparent">Prapti</span>
+              <span className="text-foreground mx-1">Santosh</span>
+              <span className="gradient-primary bg-clip-text text-transparent">Patil</span>
             </h1>
           </div>
 

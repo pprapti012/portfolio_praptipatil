@@ -4,27 +4,49 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Code, Zap } from 'lucide-react';
 const Portfolio = () => {
   const projects = [{
-    title: 'Theem College Website',
-    description: 'A modern, responsive website for Theem College of Engineering with enhanced UI/UX design, featuring improved navigation, mobile optimization, and user-friendly interface.',
+    title: 'Todo Application',
+    description: 'A modern task management application with intuitive UI, featuring task creation, completion tracking, and efficient organization for daily productivity.',
     image: '/api/placeholder/600/400',
-    technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
-    category: 'Web Development',
-    features: ['Responsive design for all devices', 'Enhanced user experience', 'Modern UI/UX principles', 'Optimized performance', 'Cross-browser compatibility'],
-    githubUrl: '#',
-    liveUrl: '#',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
+    category: 'Web Application',
+    features: ['Task creation and management', 'Completion tracking', 'Responsive design', 'Modern UI/UX', 'Real-time updates'],
+    githubUrl: 'https://github.com/pprapti012',
+    liveUrl: 'https://todoapp-xi-lemon.vercel.app/',
+    icon: Code,
+    color: 'from-green-500 to-emerald-500'
+  }, {
+    title: 'Personal Portfolio Website',
+    description: 'A comprehensive personal portfolio showcasing projects, skills, and professional journey with modern design and smooth animations.',
+    image: '/api/placeholder/600/400',
+    technologies: ['React', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    category: 'Portfolio',
+    features: ['Interactive animations', 'Project showcase', 'Responsive design', 'Contact integration', 'Modern aesthetics'],
+    githubUrl: 'https://github.com/pprapti012',
+    liveUrl: 'https://prapti-builds-web.vercel.app/',
+    icon: Zap,
+    color: 'from-purple-500 to-pink-500'
+  }, {
+    title: 'Sommaire Platform',
+    description: 'A sophisticated web platform with advanced features, modern interface, and seamless user experience designed for professional use.',
+    image: '/api/placeholder/600/400',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
+    category: 'Full Stack Application',
+    features: ['Full-stack architecture', 'Database integration', 'User authentication', 'Professional interface', 'Scalable design'],
+    githubUrl: 'https://github.com/pprapti012',
+    liveUrl: 'https://sommaire-nine.vercel.app/',
     icon: Code,
     color: 'from-blue-500 to-cyan-500'
   }, {
-    title: 'ChitChat Real-Time Chat App',
-    description: 'A real-time chat application built with Java and WebSockets, featuring group chat functionality, instant messaging, and seamless communication between users.',
+    title: 'Pawsitive Paths',
+    description: 'A compassionate platform dedicated to animal welfare, connecting pet lovers with rescue services and adoption opportunities.',
     image: '/api/placeholder/600/400',
-    technologies: ['Java', 'WebSockets', 'Real-time Communication', 'Group Chat'],
-    category: 'Real-time Application',
-    features: ['Real-time messaging', 'Group chat functionality', 'WebSocket implementation', 'User authentication', 'Message history'],
-    githubUrl: '#',
-    liveUrl: '#',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+    category: 'Social Impact Platform',
+    features: ['Pet adoption system', 'Rescue service integration', 'Community features', 'Responsive design', 'Social impact focus'],
+    githubUrl: 'https://github.com/pprapti012',
+    liveUrl: 'https://pawsitivie-paths-frontend.onrender.com',
     icon: Zap,
-    color: 'from-purple-500 to-pink-500'
+    color: 'from-orange-500 to-red-500'
   }];
   return <section id="portfolio" className="py-20 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,11 +79,11 @@ const Portfolio = () => {
                   
                   {/* Overlay with buttons on hover */}
                   <div className="absolute inset-0 bg-background/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    <Button size="sm" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => window.open(project.githubUrl, '_blank')}>
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </Button>
-                    <Button size="sm" className="gradient-primary">
+                    <Button size="sm" className="gradient-primary" onClick={() => window.open(project.liveUrl, '_blank')}>
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </Button>
@@ -97,11 +119,11 @@ const Portfolio = () => {
 
                   {/* Action Buttons */}
                   <div className="flex space-x-3">
-                    <Button variant="outline" size="sm" className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                    <Button variant="outline" size="sm" className="flex-1 border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => window.open(project.githubUrl, '_blank')}>
                       <Github className="h-4 w-4 mr-2" />
                       View Code
                     </Button>
-                    <Button size="sm" className="flex-1 gradient-primary">
+                    <Button size="sm" className="flex-1 gradient-primary" onClick={() => window.open(project.liveUrl, '_blank')}>
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </Button>
@@ -120,7 +142,7 @@ const Portfolio = () => {
               Check back regularly for updates or connect with me to discuss potential collaborations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => window.open('https://github.com/yourusername', '_blank')}>
+              <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => window.open('https://github.com/pprapti012', '_blank')}>
                 <Github className="h-4 w-4 mr-2" />
                 View GitHub Profile
               </Button>
