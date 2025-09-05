@@ -36,20 +36,20 @@ const Contact = () => {
   const contactInfo = [{
     icon: Mail,
     label: 'Email',
-    value: 'official.praptipatil@gmail.com',
-    href: 'mailto:official.praptipatil@gmail.com',
+    value: 'praptipatil1904@gmail.com',
+    href: 'mailto:praptipatil1904@gmail.com',
     color: 'from-red-500 to-pink-500'
   }, {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/praptipatil7123',
-    href: 'http://www.linkedin.com/in/praptipatil7123',
+    value: 'linkedin.com/in/praptipatil',
+    href: 'https://linkedin.com/in/praptipatil',
     color: 'from-blue-500 to-blue-600'
   }, {
     icon: Github,
     label: 'GitHub',
-    value: 'github.com/pprapti012',
-    href: 'https://github.com/pprapti012',
+    value: 'github.com/praptipatil',
+    href: 'https://github.com/praptipatil',
     color: 'from-gray-700 to-gray-900'
   }, {
     icon: ExternalLink,
@@ -156,7 +156,7 @@ const Contact = () => {
               Let's discuss your project requirements and create something amazing together. 
               I'm always open to new opportunities and interesting challenges.
             </p>
-            <Button size="lg" className="gradient-primary hover:shadow-button transition-smooth" onClick={() => window.open('mailto:official.praptipatil@gmail.com', '_blank')}>
+            <Button size="lg" className="gradient-primary hover:shadow-button transition-smooth" onClick={() => window.open('mailto:praptipatil1904@gmail.com', '_blank')}>
               Start a Conversation
             </Button>
           </div>
