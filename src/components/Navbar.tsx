@@ -42,15 +42,13 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-           <h1 className="text-xl font-bold">
-              <span className="bg-clip-text text-transparent">Prapti</span>
-              <span className="text-foreground mx-1">Santosh</span>
-              <span className="gradient-primary bg-clip-text text-transparent">Patil</span>
+            <h1 className="text-xl font-bold gradient-primary bg-clip-text text-transparent bg-slate-300">
+              Prapti Patil
             </h1>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:block">
+          <div className="hidden md:block text-slate-300">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map(item => <button key={item.name} onClick={() => scrollToSection(item.href)} className="text-foreground hover:text-primary transition-smooth relative group">
                   {item.name}
