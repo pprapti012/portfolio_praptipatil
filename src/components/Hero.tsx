@@ -24,8 +24,8 @@ const Hero = () => {
               <p className="text-primary font-medium mb-2 tracking-wide uppercase text-sm">
                 Welcome to my portfolio
               </p>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4">
-                <span className="gradient-primary bg-clip-text text-slate-200">Prapti Santosh
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-4 text-slate-200">
+                <span className="gradient-primary bg-clip-text text-5xl text-indigo-200">Prapti Santosh
 Patil</span>
                 <br />
                 <span className="text-foreground"></span>
