@@ -3,15 +3,15 @@ import { Mail, Linkedin, Github, ExternalLink, Heart } from 'lucide-react';
 const Footer = () => {
   const socialLinks = [{
     icon: Mail,
-    href: 'mailto:praptipatil1904@gmail.com',
+    href: 'mailto:official.praptipatil@gmail.com',
     label: 'Email'
   }, {
     icon: Linkedin,
-    href: 'https://linkedin.com/in/praptipatil',
+    href: 'http://www.linkedin.com/in/praptipatil7123',
     label: 'LinkedIn'
   }, {
     icon: Github,
-    href: 'https://github.com/praptipatil',
+    href: 'https://github.com/pprapti012',
     label: 'GitHub'
   }, {
     icon: ExternalLink,
@@ -90,8 +90,8 @@ const Footer = () => {
             <div className="space-y-3">
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
-                <a href="mailto:praptipatil1904@gmail.com" className="text-primary hover:text-primary-glow transition-colors">
-                  praptipatil1904@gmail.com
+                <a href="mailto:official.praptipatil@gmail.com" className="text-primary hover:text-primary-glow transition-colors">
+                  official.praptipatil@gmail.com
                 </a>
               </div>
               <div>

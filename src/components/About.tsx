@@ -2,10 +2,10 @@ import { Card, CardContent } from '@/components/ui/card';
 import { GraduationCap, Award, Users, Target } from 'lucide-react';
 const About = () => {
   const education = [{
-    degree: 'B.E. Computer Engineering',
+    degree: 'B.E. IT Engineering',
     institution: 'Theem College of Engineering',
     period: '2021 - 2025',
-    status: 'In Progress'
+    status: 'Completed'
   }, {
     degree: 'HSC - Science',
     institution: 'Maharashtra State Board',
