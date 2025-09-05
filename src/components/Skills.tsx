@@ -4,7 +4,7 @@ const Skills = () => {
   const technicalSkills = [{
     category: 'Frontend Development',
     icon: Globe,
-    skills: ['HTML', 'CSS', 'JavaScript'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'React.js', 'TailwindCSS', 'Responsive Design'],
     color: 'from-blue-500 to-cyan-500'
   }, {
     category: 'Backend Development',
