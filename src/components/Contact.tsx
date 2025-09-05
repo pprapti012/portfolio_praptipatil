@@ -63,7 +63,7 @@ const Contact = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Get In <span className="gradient-primary bg-clip-text text-slate-100">Touch</span>
+            Get In <span className="gradient-primary bg-clip-text text-slate-200">Touch</span>
           </h2>
           <div className="w-20 h-1 gradient-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
