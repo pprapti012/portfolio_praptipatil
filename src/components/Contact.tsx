@@ -1,10 +1,18 @@
-import { useState, useRef } from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
-import { Mail, Linkedin, Github, ExternalLink, Send, MapPin, Phone } from 'lucide-react';
+import { useState, useRef } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import {
+  Mail,
+  Linkedin,
+  Github,
+  ExternalLink,
+  Send,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
@@ -13,9 +21,9 @@ const Contact = () => {
 
   // ✅ state matches EmailJS variables
   const [formData, setFormData] = useState({
-    user_name: '',
-    user_email: '',
-    message: ''
+    user_name: "",
+    user_email: "",
+    message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -23,65 +31,68 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_n61m25b",      // ✅ Service ID
-        "template_eul4fz2",     // ✅ Template ID
-        formRef.current,        // ✅ form reference
-        "MXugIu4CTJtmYOyQ0"     // ✅ Public Key
+        import.meta.env.VITE_SERVICE_ID, // ✅ Service ID
+        import.meta.env.VITE_TEMPLATE_ID, // ✅ Template ID
+        formRef.current, // ✅ form reference
+        import.meta.env.VITE_PUBLIC_KEY // ✅ Public Key
       )
       .then(
         () => {
           toast({
             title: "✅ Message Sent!",
-            description: "Thank you for your message. I'll get back to you soon."
+            description:
+              "Thank you for your message. I'll get back to you soon.",
           });
-          setFormData({ user_name: '', user_email: '', message: '' });
+          setFormData({ user_name: "", user_email: "", message: "" });
         },
         (error) => {
           console.error("EmailJS Error:", error.text);
           toast({
             title: "❌ Failed to send",
-            description: "Something went wrong. Please try again later."
+            description: "Something went wrong. Please try again later.",
           });
         }
       );
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
   const contactInfo = [
     {
       icon: Mail,
-      label: 'Email',
-      value: 'official.praptipatil@gmail.com',
-      href: 'mailto:official.praptipatil@gmail.com',
-      color: 'from-red-500 to-pink-500'
+      label: "Email",
+      value: "official.praptipatil@gmail.com",
+      href: "mailto:official.praptipatil@gmail.com",
+      color: "from-red-500 to-pink-500",
     },
     {
       icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'linkedin.com/in/praptipatil7123',
-      href: 'http://www.linkedin.com/in/praptipatil7123',
-      color: 'from-blue-500 to-blue-600'
+      label: "LinkedIn",
+      value: "linkedin.com/in/praptipatil7123",
+      href: "http://www.linkedin.com/in/praptipatil7123",
+      color: "from-blue-500 to-blue-600",
     },
     {
       icon: Github,
-      label: 'GitHub',
-      value: 'github.com/pprapti012',
-      href: 'https://github.com/pprapti012',
-      color: 'from-gray-700 to-gray-900'
+      label: "GitHub",
+      value: "github.com/pprapti012",
+      href: "https://github.com/pprapti012",
+      color: "from-gray-700 to-gray-900",
     },
     {
       icon: ExternalLink,
-      label: 'Portfolio',
-      value: 'View My Work',
-      href: 'https://links.cuvette.tech/student/6820da19ec8516feacfa20e7',
-      color: 'from-purple-500 to-indigo-500'
-    }
+      label: "Portfolio",
+      value: "View My Work",
+      href: import.meta.env.VITE_PORTFOLIO_LINK ,
+      color: "from-purple-500 to-indigo-500",
+    },
   ];
 
   return (
@@ -94,7 +105,8 @@ const Contact = () => {
           </h2>
           <div className="w-20 h-1 gradient-primary mx-auto rounded-full mb-6"></div>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Ready to start a project or just want to say hello? I'd love to hear from you.
+            Ready to start a project or just want to say hello? I'd love to hear
+            from you.
           </p>
         </div>
 
@@ -104,11 +116,12 @@ const Contact = () => {
             <div className="gradient-card rounded-2xl p-8 shadow-card">
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                I'm always excited to work on new projects and collaborate with amazing people. 
-                Whether you have a project in mind, need technical consultation, or just want to 
-                connect, feel free to reach out through any of the channels below.
+                I'm always excited to work on new projects and collaborate with
+                amazing people. Whether you have a project in mind, need
+                technical consultation, or just want to connect, feel free to
+                reach out through any of the channels below.
               </p>
-              
+
               <div className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <a
@@ -127,7 +140,9 @@ const Contact = () => {
                       <p className="font-medium text-foreground group-hover:text-primary transition-colors">
                         {info.label}
                       </p>
-                      <p className="text-sm text-muted-foreground">{info.value}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {info.value}
+                      </p>
                     </div>
                   </a>
                 ))}
@@ -140,23 +155,25 @@ const Contact = () => {
               <div className="space-y-3">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-primary" />
-                  <span className="text-muted-foreground">Maharashtra, India</span>
+                  <span className="text-muted-foreground">
+                    Maharashtra, India
+                  </span>
                 </div>
-                <div className="flex items-center space-x-3">
-                  
-                 
-                </div>
+                <div className="flex items-center space-x-3"></div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <Card className="gradient-card border-0 shadow-card">
+          <Card className="gradient-card border-0 shadow-card" id="contact_me">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-6">Send me a message</h3>
               <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="name"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Full Name
                   </label>
                   <Input
@@ -172,7 +189,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="email"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Email Address
                   </label>
                   <Input
@@ -188,7 +208,10 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-foreground mb-2"
+                  >
                     Message
                   </label>
                   <Textarea
@@ -221,16 +244,18 @@ const Contact = () => {
           <div className="gradient-card rounded-2xl p-8 shadow-card max-w-3xl mx-auto">
             <h3 className="text-2xl font-bold mb-4">Ready to Work Together?</h3>
             <p className="text-muted-foreground mb-6">
-              Let's discuss your project requirements and create something amazing together. 
-              I'm always open to new opportunities and interesting challenges.
+              Let's discuss your project requirements and create something
+              amazing together. I'm always open to new opportunities and
+              interesting challenges.
             </p>
-            <Button
-              size="lg"
-              className="gradient-primary hover:shadow-button transition-smooth"
-              onClick={() => window.open('mailto:praptipatil1904@gmail.com', '_blank')}
-            >
-              Start a Conversation
-            </Button>
+            <a href={"#contact_me"}>
+              <Button
+                size="lg"
+                className="gradient-primary hover:shadow-button transition-smooth"
+              >
+                Start a Conversation
+              </Button>
+            </a>
           </div>
         </div>
       </div>

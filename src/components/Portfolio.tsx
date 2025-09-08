@@ -4,17 +4,6 @@ import { Badge } from '@/components/ui/badge';
 import { ExternalLink, Github, Code, Zap } from 'lucide-react';
 const Portfolio = () => {
   const projects = [{
-    title: 'Todo Application',
-    description: 'A modern task management application with intuitive UI, featuring task creation, completion tracking, and efficient organization for daily productivity.',
-    image: '/api/placeholder/600/400',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
-    category: 'Web Application',
-    features: ['Task creation and management', 'Completion tracking', 'Responsive design', 'Modern UI/UX', 'Real-time updates'],
-    githubUrl: 'https://github.com/pprapti012/MERN_TODO_frontend',
-    liveUrl: 'https://todoapp-xi-lemon.vercel.app/',
-    icon: Code,
-    color: 'from-green-500 to-emerald-500'
-  }, {
     title: 'Personal Portfolio Website',
     description: 'A comprehensive personal portfolio showcasing projects, skills, and professional journey with modern design and smooth animations.',
     image: '/api/placeholder/600/400',

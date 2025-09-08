@@ -112,18 +112,13 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="flex items-center space-x-2 text-muted-foreground text-sm">
-              <span>© 2025 Prapti Santosh Patil. Made with</span>
-              <Heart className="h-4 w-4 text-red-500 fill-current" />
-              <span>in India</span>
-            </div>
+              <span>© 2025 Prapti Santosh Patil</span></div>
             
             <div className="flex items-center space-x-6 text-sm">
               <button onClick={scrollToTop} className="text-muted-foreground hover:text-primary transition-colors">
                 Back to Top
               </button>
-              <span className="text-muted-foreground">
-                Built with React & Tailwind CSS
-              </span>
+             
             </div>
           </div>
         </div>
